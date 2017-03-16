@@ -1,0 +1,9 @@
+This is a script to test neutron API performance and rpc performance.
+
+To run api test:
+cd neutron-performance
+python nptrun.py --api True --username admin --password admin --tenant_name admin --auth_url 'http://192.168.75.150:5000/v2.0/'
+
+To run rpc test:
+for example:
+python nptrun.py --thread 10 --maxnum 100 --testclass TestRpcReportState
